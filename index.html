@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link use font awesome symbol -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><span class="text-purple">P</span>radnya's Portfolio</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#firstsection">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="firstsection">
+            <!-- <img src="png" alt=""> -->
+            <div class="leftsection">
+                <h2> Hi, I'm <span class="text-purple">Pradnya Shinde</span>
+                    and I am a passionate
+                    <span id="element"></span>
+                </h2>
+                <div class="button">
+                    <a href="Pradnya Shinde Resume.pdf" download class="btn">Download Resume</a>
+
+                </div>
+
+            </div>
+            <div class="rightsection">
+
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="id.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title1">About Me</h1>
+                    <p>Hi there! I'm Pradnya Shinde from Akluj and pursuing second year Computer student at
+                        S.B.Patil College Of Engineering Indapur. I am eager to learn more about web developement.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <p>Below are the some skills which I've good knowledge about this skills.</p>
+                        <div class="container box-shadow bg-dark">
+                            <div class="row skills-content">
+                                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+                                    <span class="skill font-weight-bold text-uppercase">HTML -<i
+                                            class="val ">80%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 95%"
+                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="50"></div>
+                                    </div>
+                                    <br>
+
+                                    <span class="skill font-weight-bold text-uppercase">css -<i
+                                            class="val">65%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 90%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><br>
+
+                                    <span class="skill font-weight-bold text-uppercase">Bootstrap -<i
+                                            class="val">70%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 80%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                </div>
+
+                                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                    <span class="skill font-weight-bold text-uppercase">Java -<i
+                                            class="val">60%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 90%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><br>
+
+                                    <span class="skill font-weight-bold text-uppercase">C++ -<i
+                                            class="val">75%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 75%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div><br>
+
+                                    <span class="skill font-weight-bold text-uppercase">Python -<i
+                                            class="val">50%</i></span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 90%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Secondary School Certificate(SSC) :-</span><br>The Model Multipurpose High
+                                School Malinagar Completed in [2020-2021] - 90.60%</li>
+                            <li><span>Higher Secondary Certificate(HSC) :-</span><br>The Model Multipurpose Junior
+                                College Malinagar Completed in [2022-2023] - 69.17%</li>
+                            <li><span>Bachelor's Degree in Computer Engineering :-</span><br>S.B.Patil College Of
+                                Engineering, Vangali-Indapur Pursuing [2nd Year] - 9.45 CGPA</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Project.png" alt="">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>This is a secure and responsive website which include key section like Home , About Us ,
+                            Gallery , Facilities and Contact Us. Creating website using HTML, CSS, Javascript and
+                            Bootstrap for the frontend and PHP, SQL for the backend. </p>
+                        <a href="http://localhost/polywebs/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------Contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>pradnyarshindeshinde2006@gmail.com</p>
+                    <p> <i class="fa-solid fa-mobile-screen-button"></i>9881857264</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pradnya-shinde-a8b8ba319/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.hackerrank.com/profile/pradnyarshinde21"><i
+                                class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://www.instagram.com/pradnya_shinde_24/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577175337434"><i
+                                class="fa-brands fa-facebook"></i></a>
+
+                    </div>
+                    <div class="visit">
+                        <a href="https://github.com/PradnyaShinde24" class="btn">visit Github <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; Copyright Portfolio Designed by <i class="fa-solid fa-heart"></i> Pradnya Shinde</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxVWmvQKaxttp2yDewq310fj9D6Jkh3S-6VpXMXUODjQ9jpWevsgm6_UAwyR4eTZkkm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Engineer', 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
